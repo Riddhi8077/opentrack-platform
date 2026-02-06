@@ -1,47 +1,73 @@
-1. Problem Statement
+# OpenTrack – Project Scope
 
-Student developers preparing for programs like GSoC, internships, and research opportunities struggle to track applications, open-source contributions, and personal progress in one centralized system.
+## 1. Problem Statement
 
-Most students rely on scattered tools like Notion, Excel, GitHub stars, and bookmarks, which leads to poor visibility and inconsistent preparation.
+Student developers preparing for global programs such as Google Summer of Code (GSoC), internships, and research opportunities struggle to manage applications, track open-source contributions, and monitor personal growth in a single system.
 
-2. Target Users
+Most students rely on scattered tools like Notion, Excel sheets, bookmarks, and GitHub stars, which leads to poor visibility, lack of consistency, and inefficient preparation.
 
-GSoC and Outreachy aspirants
+OpenTrack aims to solve this by providing a unified engineering dashboard for student developers.
 
-Undergraduate students applying for internships
+---
 
-Open-source contributors
+## 2. Target Users
 
-Student researchers
+- GSoC and Outreachy aspirants  
+- Undergraduate students applying for internships  
+- Open-source contributors  
+- Student researchers  
 
-3. Core Features (Version 1)
+---
 
-Program Tracker (add, update, status of applications)
+## 3. Core Features (Version 1)
 
-Open-Source Tracker (track GitHub repos, PRs, issues)
+- Program Tracker  
+  - Add and manage internship / program applications  
+  - Track application status (applied, shortlisted, rejected, selected)
 
-Personal Roadmap (DSA, system design, goals)
+- Open-Source Tracker  
+  - Track GitHub repositories  
+  - Store PR links, issues, and contribution notes  
 
-Notes & Learnings section
+- Personal Roadmap  
+  - DSA progress tracking  
+  - System design topics  
+  - Daily / weekly goals  
 
-Authentication system
+- Notes & Learnings  
+  - Store technical learnings  
+  - Interview preparation notes  
 
-4. Tech Stack
+- Authentication System  
+  - User login and signup  
+  - Secure sessions  
 
-Frontend: React + TypeScript
-Backend: Node.js + Express
-Database: MongoDB
-Auth: JWT
-Deployment: Vercel + Render (later)
+---
 
-5. Future Features (Version 2+)
+## 4. Tech Stack
 
-GitHub API integration
+Frontend: React + TypeScript  
+Backend: Node.js + Express  
+Database: MongoDB  
+Authentication: JWT  
+Deployment (planned): Vercel + Render  
 
-Contribution analytics
+---
 
-Resume builder
+## 5. Future Features (Version 2+)
 
-Email reminders
+- GitHub API integration  
+- Contribution analytics dashboard  
+- Resume / portfolio builder  
+- Email and notification system  
+- Public profile for sharing progress  
+- Community features for peer tracking  
 
-Public profile for sharing progress
+---
+
+## 6. Project Goals
+
+- Build a production-grade full-stack system  
+- Apply system design principles  
+- Improve open-source contribution workflows  
+- Create a real-world product for student developers  
