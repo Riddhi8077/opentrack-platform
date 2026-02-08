@@ -3,6 +3,14 @@ const app = express();
 
 app.use(express.json());
 
+const authRoutes = require("./routes/auth");
+const userRoutes = require("./routes/user");
+const programRoutes = require("./routes/program");
+
+app.use("/api/auth", authRoutes);
+app.use("/api/user", userRoutes);
+app.use("/api", programRoutes);
+
 app.get("/", (req, res) => {
     res.send("OpenTrack API Running");
 });
@@ -10,4 +18,5 @@ app.get("/", (req, res) => {
 app.listen(5000, () => {
     console.log("Server started on port 5000");
 });
+
 
