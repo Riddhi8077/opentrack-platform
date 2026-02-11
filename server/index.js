@@ -1,6 +1,10 @@
 const express = require("express");
 const app = express();
 
+require("./models/User");
+require("./models/Program");
+require("./models/Roadmap");
+
 app.use(express.json());
 
 const authRoutes = require("./routes/auth");
