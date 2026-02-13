@@ -14,6 +14,7 @@ const programRoutes = require("./routes/program");
 app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api", programRoutes);
+app.use("/api/programs", require("./routes/programRoutes"));
 
 app.get("/", (req, res) => {
     res.send("OpenTrack API Running");
