@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1100px;
+  padding: 12px 30px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.nav-links a {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.nav-btn {
+  padding: 8px 14px;
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  border-radius: 6px;
+}
+
+body {
+  color: white;
+  overflow-x: hidden;
+}
+
+/* VIDEO BACKGROUND */
+.video-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: -1;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+}
+
+.glow-text {
+  font-size: 64px;
+  text-shadow: 0 0 20px #38bdf8;
+}
+
+.neon-btn {
+  margin-top: 30px;
+  width: 220px;
+  padding: 14px;
+  background: transparent;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.neon-btn:hover {
+  background: #38bdf8;
+  color: black;
+  box-shadow: 0 0 20px #38bdf8;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px;
+}
+
+.glass-card {
+  width: 280px;
+  padding: 30px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.4s;
+}
+
+.glass-card:hover {
+  transform: translateY(-10px) scale(1.05);
+}
