@@ -127,3 +127,51 @@ body {
 .glass-card:hover {
   transform: translateY(-10px) scale(1.05);
 }
+
+.issue-form {
+  margin: 20px 0;
+}
+
+input, select {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+td {
+  cursor: pointer;
+}
+
+.glass {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.fade-in {
+  animation: fade 0.8s ease;
+}
+
+@keyframes fade {
+  from {opacity:0; transform: translateY(20px);}
+  to {opacity:1;}
+}
+tr:hover {
+  background: rgba(255,255,255,0.15);
+  transform: scale(1.01);
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}

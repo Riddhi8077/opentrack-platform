@@ -2,10 +2,34 @@
 <html>
 <head>
   <title>Issues | OpenTrack</title>
-  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="./style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
+     <nav class="navbar">
+  <div class="logo">OpenTrack</div>
+  <div class="nav-links">
+    <a href="#">Features</a>
+    <a href="#">Dashboard</a>
+    <a href="#">Login</a>
+    <a href="issues.html">Issues</a>
+    <button class="nav-btn">Get Started</button>
+  </div>
+</nav>
+
+    <!-- VIDEO BACKGROUND -->
+<div class="video-bg">
+  <video autoplay muted loop>
+    <source src="assets/bg.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+</div>
+
+<div class="glass fade-in">
+
+    <!-- HERO -->
+<section class="hero">
 <h1>Project Issues</h1>
 
 <div class="issue-form">
@@ -28,6 +52,7 @@
   </thead>
   <tbody id="issueList"></tbody>
 </table>
+</section>
 
 <script src="issues.js"></script>
 </body>
