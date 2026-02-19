@@ -32,26 +32,28 @@
 <section class="hero">
 <h1>Project Issues</h1>
 
-<div class="issue-form">
-  <input type="text" id="title" placeholder="Issue title">
-  <select id="priority">
-    <option>Low</option>
-    <option>Medium</option>
-    <option>High</option>
-  </select>
-  <button onclick="addIssue()">Add Issue</button>
-</div>
+<div class="issue-container glass fade-in">
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Priority</th>
-      <th>Status</th>
-    </tr>
-  </thead>
-  <tbody id="issueList"></tbody>
-</table>
+  <h2>Create New Issue</h2>
+
+  <div class="input-group">
+    <input type="text" id="title" required>
+    <label>Issue Title</label>
+  </div>
+
+  <div class="select-group">
+    <select id="priority">
+      <option value="Low">Low Priority</option>
+      <option value="Medium">Medium Priority</option>
+      <option value="High">High Priority</option>
+    </select>
+  </div>
+
+  <button class="primary-btn" onclick="addIssue()">
+    Add Issue
+  </button>
+
+</div>
 </section>
 
 <script src="issues.js"></script>
